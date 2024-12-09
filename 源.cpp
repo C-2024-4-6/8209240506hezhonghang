@@ -1,12 +1,14 @@
-#include <iostream>
-#include <iomanip>
+#include<iostream>
 using namespace std;
 int main()
 {
-	float a;
-	cout << "请输入华氏温度";
-	cin >> a;
-	cout << "转化后的摄氏温度为" <<setprecision(4)<<(a - 32) / 1.8 << endl;
+	float i = 2.0,a=1.0,b;
+	do
+	{
+		i = i * 2;
+		a++;
+	} while (i < 100);
+	b = 0.8*(2 - i) / (1 - 2)/--a;
+	cout << b;
 	return 0;
 }
-
